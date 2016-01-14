@@ -1,0 +1,54 @@
+@model ColorWars.ViewModels.Couleur.CreerCouleurViewModel
+
+<form asp-action="Default">
+    <div class="form-horizontal">
+        <h4>CreerCouleurViewModel</h4>
+        <hr />
+        <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Dexterite" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Dexterite" class="form-control" />
+                <span asp-validation-for="Dexterite" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Endurance" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Endurance" class="form-control" />
+                <span asp-validation-for="Endurance" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Force" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Force" class="form-control" />
+                <span asp-validation-for="Force" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="NbPtsRestants" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="NbPtsRestants" class="form-control" />
+                <span asp-validation-for="NbPtsRestants" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Nom" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Nom" class="form-control" />
+                <span asp-validation-for="Nom" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
